@@ -1,19 +1,3 @@
 # How-to-upload-app-to-play-store
 This is actually not a project instead my own guide for uploading app to play store in next time.
-Following are the steps I have been through:
-Step 1: change the debuggable mode in the build.xml file.
-Step 2: change the package path from com.gamemaker.game to any thing such as come.gamemakerVUDUYDU.game because play store already has this path in its system.
-Step 3: rebuild a new .apk file in release mode by using statement "ant release" in order to sign with out own keystore
-  -release mode:
-    + unsigned, unaligned
-    + signed, unagligned
-  -debug mode:
-    +signed with debug.keystore, aligned
-Step 4: sign .apk file with keystore:
-  -open command promt at "Java\jdk1.8.0_121\bin"
-  -create keystore with command line: "keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000"
-  -sign with command line: "jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore my_application.apk alias_name"
-Step 5: align .apk file:
-  -open command promt at "android-sdk-windows\build-tools\23.0.3"
-  -align with command line:"zipalign -f -v inp.apk out.apk"
-Step 6: use out.apk to upload in to playstore :))
+
