@@ -14,5 +14,5 @@ Step 4: sign .apk file with keystore:
   -sign with command line: "jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore my_application.apk alias_name"
 Step 5: align .apk file:
   -open command promt at "android-sdk-windows\build-tools\23.0.3"
-  -align with command line:"zipalign -f -v inp.apk out.apk"
+  -align with command line:"zipalign -f -v 4 inp.apk out.apk"
 Step 6: use out.apk to upload in to playstore :))
