@@ -17,3 +17,10 @@ Step 5: align .apk file:
   -open command promt at "android-sdk-windows\build-tools\23.0.3"
   -align with command line:"zipalign -f -v 4 inp.apk out.apk"
 Step 6: use out.apk to upload in to playstore :))
+
+
+In case of update: 
+  go to https://play.google.com/apps/publish/?account=5698207715362171768#ManageReleasesPlace:p=com.gamemaker.gameWandering
+  select Product manager
+  Create Relase
+  :))
